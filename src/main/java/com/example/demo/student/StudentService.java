@@ -11,9 +11,11 @@ import static java.util.List.*;
 //@Component
 @Service
 public class StudentService {
-
+    private final StudentRepository studentRepository;
     @Autowired
-    StudentRepository studentRepository;
+    public StudentService(StudentRepository studentRepository) {
+        this.studentRepository = studentRepository;
+    }
 
 
     public List<Student> getStudents(){

@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 @Entity
 @Table
-public class Student {
+public class Student{
     @Id
     @SequenceGenerator(
             name="student_sequence",
